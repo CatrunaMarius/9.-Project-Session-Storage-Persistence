@@ -1,6 +1,7 @@
 // creaza imaginea si afisarea cosului
 import React from 'react';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import { toggleCartHidden } from '../../redux/cart/cart.actions';
 import { selectCartItemsCount } from '../../redux/cart/cart.selectors';
@@ -22,8 +23,8 @@ const mapDispatchToProps = dispatch => ({
 })
 
 // care afiseaza nr total de iteme in cos
-const mapStateToProps = (state) => ({
-    itemCount: selectCartItemsCount(state)
+const mapStateToProps = createStructuredSelector({
+    itemCount: selectCartItemsCount
 })
 
 export default connect(
