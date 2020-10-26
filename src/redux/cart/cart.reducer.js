@@ -1,7 +1,10 @@
+// se ocupa de partea de adauga iteme in cos
 import CartActionTypes from './cart.types';
+import { addItemToCart } from './cart.utils'
 
 const INITIAL_STATE = {
-    hidden: true
+    hidden: true,
+    cartItems: []
 };
 
 const cartReducer = ( state = INITIAL_STATE, action) =>{
@@ -10,6 +13,11 @@ const cartReducer = ( state = INITIAL_STATE, action) =>{
             return {
                 ...state,
                 hidden: !state.hidden
+            }
+        case CartActionTypes.ADD_ITEM:
+            return {
+                ...state,
+                cartItems: addItemToCart(state.cartItems, action.payload) //action.payload itemul pe care vem sa il adugam
             }
         default:
             return state;

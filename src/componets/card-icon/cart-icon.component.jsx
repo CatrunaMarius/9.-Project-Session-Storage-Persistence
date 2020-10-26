@@ -1,3 +1,4 @@
+// creaza imaginea si afisarea cosului
 import React from 'react';
 import { connect } from 'react-redux';
 
