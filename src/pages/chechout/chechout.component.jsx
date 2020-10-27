@@ -1,3 +1,4 @@
+// web page checkout functionaliti  si afisasi
 import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
