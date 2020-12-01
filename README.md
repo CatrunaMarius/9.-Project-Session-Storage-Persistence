@@ -1,3 +1,11 @@
+## 9. Project Session Storage + Persistence
+### Referince link
+[window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)
+
+[window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)]
+
+[redux-persist Npm](https://www.npmjs.com/package/redux-persist)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
